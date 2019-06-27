@@ -28,19 +28,19 @@ void calculate_the_maximum(int n, int k) {
       for(int j=i+1;j<=n;j++)
       {
           andRes = i&j;
-          if(andRes > constraintAND && andRes < 4)
+          if(andRes > constraintAND && andRes < k)
           {
               constraintAND = andRes;
           }
 
           orRes = i|j;
-          if(orRes > constraintOR && orRes < 4)
+          if(orRes > constraintOR && orRes < k)
           {
               constraintOR = orRes;
           }
 
           xorRes = i^j;
-          if(xorRes > constraintXOR && xorRes < 4)
+          if(xorRes > constraintXOR && xorRes < k)
           {
               constraintXOR = xorRes;
           }
